@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  color: #2A1458;
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+body{
+ background: linear-gradient(90deg,rgba(56, 187, 201, 1) 0%, rgba(71, 162, 173, 1) 4%, rgba(72, 164, 170, 1) 26%, rgba(107, 233, 237, 1) 64%, rgba(250, 244, 187, 1) 100%);
+}
+.full-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  position: relative;
+  padding: 1rem;
+  transform: translateX(-20px); 
+}
+
+.small {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 35rem;
+}
+
+input {
+  height: 2rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  height: 2rem;
+  width: 100%;
+  /* max-width: 100px; */
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.submit{
+  width: 100px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 40rem;
+
+  min-height: 20rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+  top: 5rem;
+  background: aliceblue;
+}
+
+.main-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background: aliceblue;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.suggestions{
+  width: 20rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #2A1458;
+  padding-left: 0.4rem;
+  height: auto;
+  max-height: 10rem;
+}
+.suggestions h3{
+  color: goldenrod;
+}
+.suggestions p{
+  color: aliceblue;
+}
+.hour{
+  width: 10rem;
+  position: relative;
+  bottom: 0rem;
+  transform: translateY(25px);
+  margin-left: 210px;
+  background-color: red;
+  color: aliceblue;
+  border: none;
+}
+
+/* 🌐 Media Queries for Smaller Screens */
+@media (max-width: 500px) {
+  .main-container {
+    padding: 0.8rem;
+    width: 95%;
+  }
+
+  input,
+  button {
+    width: 100%;
+    /* max-width: none; */
+  }
+
+  .small {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

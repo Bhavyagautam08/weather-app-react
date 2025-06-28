@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table{
+    width: 35rem;
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}
